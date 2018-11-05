@@ -3,6 +3,7 @@
 //TODO #1.1: add a function prototype for fib
 int fib(const int N);
 //TODO #2.1: add a function prototype for fact
+int fact(const int N);
 
 int main()
 {
@@ -10,6 +11,8 @@ int main()
 	for (int i = 0; i < 20; i++)
 		std::cout << fib(i) << std::endl;
 	//TODO: #2.2 call your fact function, print the result
+	for (int i = 0; i < 20; i++)
+		std::cout << fact(i) << std::endl;
 
 	return 0;
 }
@@ -23,3 +26,10 @@ int fib(const int N)
 }
 
 //TODO #2.4: add your recursive fact function from class
+int fact(const int N)
+{
+	if (N == 0)
+		return 1;
+	else
+		return N * fact(N - 1);
+}
