@@ -7,7 +7,7 @@
 int main()
 {
 	//TODO: #1.2 call your fib function, print the result
-	
+	int i = 0;
 	//TODO: #2.2 call your fact function, print the result
 
 	return 0;
